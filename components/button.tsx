@@ -17,8 +17,8 @@ export default function Button({
   onPress,
   title,
   bgColor = "bg-blue-500", // Couleur de fond par défaut
-  textColor = "text-white",  // Couleur du texte par défaut
-  className = "",            // Classes supplémentaires par défaut
+  textColor = "text-white", // Couleur du texte par défaut
+  className = "", // Classes supplémentaires par défaut
 }: ButtonProps) {
   return (
     <StyledButton

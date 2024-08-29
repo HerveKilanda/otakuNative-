@@ -47,7 +47,9 @@ export default function InscriptionScreen() {
   return (
     <View className="flex-1 justify-center items-center bg-black">
       <View className="bg-white p-8 rounded-lg w-96">
-        <Text className="text-3xl font-bold text-center text-black mb-6">Inscription</Text>
+        <Text className="text-3xl font-bold text-center text-black mb-6">
+          Inscription
+        </Text>
         <TextInput
           className="w-full py-2 px-4 bg-gray-200 rounded border border-gray-400 mb-4"
           placeholder="Email"
@@ -60,9 +62,7 @@ export default function InscriptionScreen() {
           })}
         />
         {errors.email && (
-          <Text className="text-red-500 mb-2">
-            {errors.email.message}
-          </Text>
+          <Text className="text-red-500 mb-2">{errors.email.message}</Text>
         )}
         <TextInput
           className="w-full py-2 px-4 bg-gray-200 rounded border border-gray-400 mb-4"
@@ -70,9 +70,7 @@ export default function InscriptionScreen() {
           {...register("username", { required: true })}
         />
         {errors.username && (
-          <Text className="text-red-500 mb-2">
-            {errors.username.message}
-          </Text>
+          <Text className="text-red-500 mb-2">{errors.username.message}</Text>
         )}
         <TextInput
           className="w-full py-2 px-4 bg-gray-200 rounded border border-gray-400 mb-4"
@@ -92,11 +90,12 @@ export default function InscriptionScreen() {
           })}
         />
         {errors.password && (
-          <Text className="text-red-500 mb-2">
-            {errors.password.message}
-          </Text>
+          <Text className="text-red-500 mb-2">{errors.password.message}</Text>
         )}
-        <TouchableOpacity onPress={handleSubmit(onSubmit)} className="bg-blueivy py-2 px-4 rounded mt-4">
+        <TouchableOpacity
+          onPress={handleSubmit(onSubmit)}
+          className="bg-blueivy py-2 px-4 rounded mt-4"
+        >
           <Text className="text-white text-center">Valider</Text>
         </TouchableOpacity>
       </View>

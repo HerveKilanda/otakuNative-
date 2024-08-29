@@ -59,11 +59,11 @@ function RootLayoutNav() {
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen
           name="screens/Inscription"
-          options={{ title: "Inscription" }}
+          options={{ title: "Inscription", headerShown: false }}
         />
         <Stack.Screen
           name="screens/Connexion"
-          options={{ title: "Connexion" }}
+          options={{ title: "Connexion", headerShown: false }}
         />
         <Stack.Screen name="modal" options={{ presentation: "modal" }} />
       </Stack>

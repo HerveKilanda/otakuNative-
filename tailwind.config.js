@@ -7,8 +7,11 @@ module.exports = {
     "./screens/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        blueivy: "#0052D4",
+      },
+    },
   },
   plugins: [],
 };
-  
